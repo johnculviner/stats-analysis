@@ -21,11 +21,21 @@ No production dependencies.
 $ npm install stats-analysis
 ```
 
-## Usage
+## Node.js
 
 ```js
 var stats = require("./stats-analysis") // include statistics library
 ```
+
+## Browser
+```html
+<script src="/node_modules/stats-analysis/stats.js"></script>
+```
+```js
+window.statsAnalysis
+```
+
+## Usage
 
 ```js
 var arr = [-2, 1, 2, 3, 3, 4, 15]

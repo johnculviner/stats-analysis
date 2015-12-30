@@ -1,6 +1,6 @@
 {
   "name": "stats-analysis",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Engineering statistics and data analysis",
   "main": "stats.js",
   "scripts": {
@@ -34,5 +34,6 @@
   "bugs": {
     "url": "https://github.com/alyssaq/stats-analysis/issues"
   },
-  "homepage": "https://github.com/alyssaq/stats-analysis"
+  "homepage": "https://github.com/alyssaq/stats-analysis",
+  "dependencies": {}
 }

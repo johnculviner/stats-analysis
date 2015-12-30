@@ -7,6 +7,8 @@
  * - Remove outliers from an array of numbers
  */
 
+(function() {
+
 var outlierMethod = {
   MAD: 'MAD',
   medianDiff: 'medianDiff'
@@ -135,7 +137,7 @@ function indexOfOutliers (arr, threshold, method) {
   }
 }
 
-module.exports = {
+var exports = {
   stdev: stdev,
   mean: mean,
   median: median,
@@ -149,3 +151,13 @@ module.exports = {
   filterMedianDiffOutliers: filterMedianDiffOutliers,
   indexOfMedianDiffOutliers: indexOfMedianDiffOutliers
 }
+
+if(typeof module !== "undefined") {
+  module.exports = exports
+}
+
+if(typeof window !== "undefined") {
+  window.statsAnalysis = exports
+}
+
+})();
